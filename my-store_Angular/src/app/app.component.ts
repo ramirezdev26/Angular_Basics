@@ -8,6 +8,7 @@ import { Product } from './product.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  widthImg = 10;
   name = 'Santiago';
   age = 22;
   img = 'https://www.w3schools.com/howto/img_avatar.png';
@@ -19,6 +20,11 @@ export class AppComponent {
   }
   names: string[] = ['Santi', 'Lau', 'Mat'];
   newName = '';
+  box = {
+    width: 100,
+    height: 100,
+    background: 'red'
+  };
   products: Product[] = [
     {
       name: 'EL mejor juguete',
